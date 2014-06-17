@@ -23,6 +23,9 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
+#Фиксит предупреждения при запуске тестов
+gem 'minitest'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
