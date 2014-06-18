@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.2.rc1'
 
+# bootstrap
+gem 'bootstrap-sass', '2.3.2.0'
+
 #Всегда используем PostgreSQL
 #gem 'pg', '>=0.15.1'
 
