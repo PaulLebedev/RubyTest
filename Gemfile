@@ -6,6 +6,9 @@ gem 'rails', '4.1.2.rc1'
 # bootstrap
 gem 'bootstrap-sass', '2.3.2.0'
 
+# paginate
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
 
 #самая новомодная хэш функция, называемая bcrypt для необратимого шифрования пароля в виде хэша пароля
 gem 'bcrypt-ruby', '>=3.1.2'
