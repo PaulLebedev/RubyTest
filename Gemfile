@@ -13,6 +13,9 @@ gem 'bootstrap-will_paginate', '0.0.9'
 #самая новомодная хэш функция, называемая bcrypt для необратимого шифрования пароля в виде хэша пароля
 gem 'bcrypt-ruby', '>=3.1.2'
 
+#делать образцы пользователей с полу-реалистичными именами и адресами электронной почты
+gem 'faker', '1.1.2'
+
 #Всегда используем PostgreSQL
 #gem 'pg', '>=0.15.1'
 
@@ -21,12 +24,18 @@ group :development, :test do
   gem 'sqlite3'
   #получаем доступ к RSpec-специфичным генераторам и это включает его в test mode где он нужен для запуска тестов
   gem 'rspec-rails', '~> 2.13.1'
+  gem 'factory_girl_rails', '~> 4.2.1'
 end
 
-#включили гем Capybara, который позволит нам симулировать взаимодействие пользователя с нашим примером приложения используя понятный Англоподобный синтаксис, совместно с Selenium, одной из зависимостей Capybara
 group :test do
+#включили гем Capybara, который позволит нам симулировать взаимодействие пользователя с нашим примером приложения используя понятный Англоподобный синтаксис, совместно с Selenium, одной из зависимостей Capybara
   gem 'selenium-webdriver', '~> 2.35.1'
   gem 'capybara', '~> 2.1.0'
+
+#cucumber
+  gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
+
 end
 
 #pg и rails_12factor гемы в production для развертывания на Heroku
